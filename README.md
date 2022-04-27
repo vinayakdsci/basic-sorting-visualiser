@@ -1,2 +1,2 @@
-# basic-sorting-visualiser
-Very baic sorting algorithm visualizer
+# Basic Sorting Visualization Program
+  A basic sorting visualiser covering Selection Sort, Insertion Sort, Bubble Sort
