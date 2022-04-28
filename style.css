@@ -35,7 +35,7 @@ a {
 	background-color : transparent;
     height: 420px;
     width: 600px;
-    margin: auto;
+    margin: 20%;
     position: relative;
     margin-top: 64px;
     animation: fadeOut 5s;
@@ -51,7 +51,9 @@ p: hover{
 }
 
 .bar {
-    width: 28px;
+	padding: 0;
+	margin: 0;		
+    width: 28px;	
     background-color: #24abff;
     position: absolute;
     bottom: 0px;

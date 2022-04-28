@@ -3,7 +3,7 @@ var container = document.getElementById("arr");
 // Function to generate the array of blocks
 function generate() {
     container.innerHTML = ""; //Empty the div so that there is no overlap
-    for (var i = 0; i < 25; i++) {
+    for (var i = 0; i < 30; i++) {
   
         // Return a value from 1 to 100 (both inclusive)
         var value = Math.ceil(Math.random() * 100); // ceiling turns the float value to the the smallest integer grater than it
