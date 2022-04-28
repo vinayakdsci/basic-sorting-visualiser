@@ -98,7 +98,7 @@ async function InsertionSort(delay=100) {
   let bars = document.querySelectorAll(".bar");
   
   // Provide lightgreen colour to 0th bar
-  bars[0].style.backgroundColor = " rgb(49, 226, 13)";
+  bars[0].style.backgroundColor = "#31e20d";
   for (var i = 1; i < bars.length; i += 1) {
   
     // Assign i-1 to j
