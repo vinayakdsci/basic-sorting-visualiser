@@ -47,13 +47,13 @@ function swap(el1, el2) {
             setTimeout(() => {
                 container.insertBefore(el2, el1);
                 resolve();
-            }, 200);
+            }, 110);
         });
     });
 }
   
 // Asynchronous BubbleSort function
-async function BubbleSort(delay = 200) {
+async function BubbleSort(delay = 125) {
     var blocks = document.querySelectorAll(".bar");
   
     // BubbleSort Algorithm
@@ -93,6 +93,7 @@ async function BubbleSort(delay = 200) {
         blocks[blocks.length - i - 1]
                 .style.backgroundColor = "#13CE66";
     }
+    alert("Sorted!");
 }
 
 async function InsertionSort(delay=125) {
@@ -154,7 +155,7 @@ async function InsertionSort(delay=125) {
     // Provide light green color to the ith bar
     bars[i].style.backgroundColor = "#13CE66";
   }
-  
+  alert("Sorted!");
 }
 
 
@@ -199,6 +200,7 @@ async function SelectionSort(delay = 100) {
       );
           bars[min_index].style.backgroundColor = "pink";
           bars[i].style.backgroundColor = "#13CE66";
-    }  
+    }
+    alert("Sorted!");  
 }
 
