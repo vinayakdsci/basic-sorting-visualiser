@@ -8,26 +8,27 @@ function generate() {
         // Return a value from 1 to 100 (both inclusive)
         var value = Math.ceil(Math.random() * 100); // ceiling turns the float value to the the smallest integer grater than it
   
-        // Creating element div
-        var array_ele = document.createElement("div");
+        // Create element div
+        var array_element = document.createElement("div");
   
-        // Adding class 'block' to div
-        array_ele.classList.add("bar");
+        // Add class 'block' to div
+        array_element.classList.add("bar");
   
-        // Adding style to div
-        array_ele.style.height = `${value * 3}px`;
-        array_ele.style.transform = `translate(${i * 30}px)`;
+        // Add style to div
+        array_element.style.height = `${value * 3}px`;
+        array_element.style.transform = `translate(${i * 30}px)`;
   
-        // Creating label element for displaying 
+        // Create label for displaying 
         // size of particular block
-        var array_ele_label = document.createElement("label");
-        array_ele_label.classList.add("bar_id");
-        array_ele_label.innerText = value;
+        var array_element_label = document.createElement("label");
+        array_element_label.classList.add("bar_id");
+        array_element_label.innerText = value;
   
         // Appending created elements to index.html 
-        array_ele.appendChild(array_ele_label);
-        container.appendChild(array_ele);
+        array_element.appendChild(array_element_label);
+        container.appendChild(array_element);
     }   
+        
     
 }
   
@@ -94,7 +95,7 @@ async function BubbleSort(delay = 200) {
     }
 }
 
-async function InsertionSort(delay=100) {
+async function InsertionSort(delay=125) {
   let bars = document.querySelectorAll(".bar");
   
   // Provide lightgreen colour to 0th bar
@@ -143,11 +144,11 @@ async function InsertionSort(delay=100) {
     bars[j + 1].style.height = height;
     bars[j + 1].childNodes[0].innerHTML = key;
        
-    // Pause the execution of code for 100 milliseconds
+    // Pause the execution of code for 125 milliseconds
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
-      }, 100)
+      }, delay)
     );
       
     // Provide light green color to the ith bar
